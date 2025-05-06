@@ -14,8 +14,8 @@ classifiers=[
     "Programming Language :: Python :: 3",
     "Operating System :: Microsoft :: Windows",  
 ]
-license = "MIT"
-license-files = ["LICEN[CS]E*"]
+
+license = { file = "LICENSE" }
 
 [project.urls]
 Homepage = "https://github.com/tomjod/buicap-py"
@@ -25,4 +25,4 @@ Issues = "https://github.com/tomjod/buicap-py/issues"
 where = ["src"]
 
 [tool.setuptools.package-data]
-mypkg = ["*.typed", "*.rst"]
+buicap_py = ["*.typed", "*.rst"]
