@@ -88,7 +88,7 @@ class TestDCCScan:
 
         assert (
             result.get("result") == 0
-        ), f"Error in DCCScan: {result.get("result")} - {dcc.error_dict.get(result.get("result"), 'Unknown error')}"
+        ), f"Error in DCCScan: {result.get('result')} - {dcc.error_dict.get(result.get("result"), 'Unknown error')}"
 
 @pytest.mark.functional
 def test_dcc_is_dcc_usb_scanner_available(request):
