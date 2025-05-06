@@ -31,7 +31,7 @@ jobs:
 
     - name: Run tests
       run: pytest tests/unit/ -v -m "not functional"
-      
+
   deploy:
     needs: test
     if: github.event_name == 'release' || startsWith(github.ref, 'refs/tags/v')
@@ -56,17 +56,6 @@ jobs:
 
     - name: Build package
       run: python -m build
-
-    - name: Publish to TestPyPI
-      env:
-        TWINE_USERNAME: __token__
-        TWINE_PASSWORD: ${{ secrets.TEST_PYPI_API_TOKEN }}
-      run: twine upload --repository testpypi dist/*
-
-    - name: Wait 10 minutes for TestPyPI verification
-      uses: fountainhead/action-wait@v2.0.0
-      with:
-        minutes: 10
 
     - name: Publish to PyPI (Production)
       if: github.event_name == 'release'
