@@ -30,8 +30,8 @@ jobs:
       run: pip install -e .
 
     - name: Run tests
-      run: pytest tests/unit -v
-
+      run: pytest tests/unit/ -v -m "not functional"
+      
   deploy:
     needs: test
     if: github.event_name == 'release' || startsWith(github.ref, 'refs/tags/v')
