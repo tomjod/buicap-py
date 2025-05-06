@@ -30,7 +30,7 @@ Python bindings for interacting with Digital Check's native DLL functions. This 
 
 ## 📦 Installation
 ```bash
-pip install git+https://github.com/tomjod/buicap-py.git
+pip install buicap-py
 ```
 
 ## Basic Usage
