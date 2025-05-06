@@ -1,0 +1,28 @@
+[build-system]
+requires = ["setuptools>=80.1.0", "wheel"]
+build-backend = "setuptools.build_meta"
+[project]
+name = "buicap-py"
+version = "0.1.1"
+authors = [
+  { name="Alexis Ocando", email="alexisocando.cl@gmail.com" },
+]
+description = "Python wrapper for Digital Check DLL"
+readme = "README.md"
+requires-python = ">=3.8"
+classifiers=[
+    "Programming Language :: Python :: 3",
+    "Operating System :: Microsoft :: Windows",  
+]
+license = "MIT"
+license-files = ["LICEN[CS]E*"]
+
+[project.urls]
+Homepage = "https://github.com/tomjod/buicap-py"
+Issues = "https://github.com/tomjod/buicap-py/issues"
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.setuptools.package-data]
+mypkg = ["*.typed", "*.rst"]

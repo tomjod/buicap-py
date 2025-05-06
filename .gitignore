@@ -1,0 +1,60 @@
+# Byte-compiled / cache
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+*.pdb
+*.log
+
+# Virtual environments
+env/
+venv/
+.myenv/
+myenv/
+*.env
+
+# IDEs y editors
+.vscode/
+.idea/
+*.swp
+
+# Files of scanned documents
+scanned_documents/
+*.jpg
+*.tiff
+*.bmp
+
+# Temporary files
+__pycache__/
+tests/*.jpg
+tests/*.tiff
+tests/__pycache__/
+
+# DLLs u otros binarios del SDK 
+*.dll
+*.so
+*.exe
+*.H
+*.pdf
+*.rtf
+**/lib
+BUICSCAN.INI
+
+# Otros
+.DS_Store
+Thumbs.db
+.egg-info/
+*.egg
+**/dist
+buicap_py.egg-info/dependency_links.txt
+buicap_py.egg-info/PKG-INFO
+buicap_py.egg-info/SOURCES.txt
+buicap_py.egg-info/top_level.txt
+docs/make.bat
+docs/Makefile
+docs/source/conf.py
+docs/source/index.rst
+src/buicap_py.egg-info/dependency_links.txt
+src/buicap_py.egg-info/PKG-INFO
+src/buicap_py.egg-info/SOURCES.txt
+src/buicap_py.egg-info/top_level.txt
